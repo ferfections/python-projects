@@ -1,0 +1,7 @@
+{
+    "chargingPoints": [
+        {"cp_id": "cp1","ubicacion": { "nombre_calle": "Calle Doctor Bergez","numero_calle": 81,"ciudad": "Alicante"},"precio_kwh": 8.59,"longitud": 97.390291,"latitud": 90.039492},
+        {"cp_id": "cp2","ubicacion": {"nombre_calle": "Calle Sevilla","numero_calle": 12,"ciudad": "Alicante"},"precio_kwh": 7.59,"longitud": 99.390291,"latitud": 97.039492},
+        {"cp_id": "cp3","ubicacion": {"nombre_calle": "Avenida Alfonso el Sabio","numero_calle": 3,"ciudad": "Alicante"},"precio_kwh": 8.59,"longitud": 97.390291,"latitud": 90.039492}
+    ]
+}
