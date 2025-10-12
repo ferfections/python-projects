@@ -1,6 +1,5 @@
 from dataclasses import dataclass
 
-
 # En vez de esto
 @dataclass
 class HTMLPage:
