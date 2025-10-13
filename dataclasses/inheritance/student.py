@@ -6,4 +6,4 @@ class Student(Person):
         self.studies = studies
     
     def __str__(self):
-        return super().__str__() + f"studies={self.studies}"
+        return super().__str__() + f" studies={self.studies}"
