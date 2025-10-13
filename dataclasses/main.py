@@ -5,6 +5,13 @@ class User:
     username: str
     mail: str
     age: int
+
+    def toDict(self):
+        return {
+            self.username,
+            self.mail,
+            self.age
+        }
     
 def main():
     user1 = User("fernando", "fernando@alu.ua.es", 24)
