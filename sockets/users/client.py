@@ -6,7 +6,7 @@ PORT = 9999
 
 # Datos del usuario que se enviarán
 user_data = {
-    "username": "ferfections",
+    "username": "fer",
     "mail": "fng8@example.com",
     "age": 24
 }

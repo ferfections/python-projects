@@ -7,7 +7,7 @@ class User:
     age: int
     
 def main():
-    user1 = User("fernando", "fng8@alu.ua.es", 24)
+    user1 = User("fernando", "fernando@alu.ua.es", 24)
     print(user1)
 
 if __name__ == "__main__":
