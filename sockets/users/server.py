@@ -14,8 +14,8 @@ def save_user_to_json(user):
             users = json.load(file)
     except FileNotFoundError:
         users = []
-
     users.append(user.to_dict())
+
 
     with open(filename, "w") as file:
         json.dump(users, file, indent=4)
