@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 
 temp_universe = np.arange(0, 40, 0.01)
 humd_univers = np.arange(0, 100, 0.01)
-temp_variation 
+temp_variation = np.arange()
 
 # States:
 temp_very_cold = fuzz.trapmf(temp_universe, [0, 0, 10, 15])
@@ -26,6 +26,14 @@ humd_low = fuzz.trapmf(humd_univers, [10, 25, 40])
 humd_normal = fuzz.trapmf(humd_univers, [30, 40, 50])
 humd_high = fuzz.trapmf(humd_univers, [40, 55, 70])
 humd_very_high = fuzz.trapmf(humd_univers, [60, 70, 100, 100])
+
+var_big_descent = fuzz.trapmf(temp_variation, [-15, -10, -7.5])
+var_normal_descent = fuzz.trapmf(temp_variation, [-10, -5, -2.5])
+var_small_descent = fuzz.trapmf(temp_variation, [-7.5, -3.75, 0])
+var_stay = fuzz.trapmf(temp_variation, [-3.75, 0, 3.75])
+var_small_augment = fuzz.trapmf(temp_variation, [0, 3.75, 7.5])
+var_normal_augment = fuzz.trapmf(temp_variation, [2.5, 5, 10])
+var_big_augment = fuzz.trapmf(temp_variation, [7.5, 10, 15])
 
 def fuzzy_input(x: int) -> int:
     return     
