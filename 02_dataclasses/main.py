@@ -2,9 +2,11 @@ from dataclasses import dataclass
 
 @dataclass
 class User:
+    """ User class """
     username: str
     mail: str
     age: int
+
 
     def toDict(self):
         return {
@@ -12,8 +14,9 @@ class User:
             self.mail,
             self.age
         }
-    
-def main():
+
+def main():    
+    """ Block comment """
     user1 = User("fernando", "fernando@alu.ua.es", 24)
     print(user1)
 
