@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+    <h1>{{ cita.autor }}</h1>
+    
+    <blockquote style="font-size: 1.2em; font-style: italic;">
+        "{{ cita.texto }}"
+    </blockquote>
+    
+    <hr>
+    <a href="{{ url_for('index') }}">&larr; Volver al inicio</a>
+{% endblock %}

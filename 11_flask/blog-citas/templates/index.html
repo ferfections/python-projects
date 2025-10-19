@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+    <h1>📚 Citas Famosas</h1>
+    <ul>
+        {% for id, cita in citas.items() %}
+            <li>
+                <a href="{{ url_for('ver_cita', id=id) }}">
+                    "{{ cita.texto|truncate(40) }}" - <strong>{{ cita.autor }}</strong>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
