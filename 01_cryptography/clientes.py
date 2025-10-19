@@ -19,7 +19,8 @@ class CentralApp:
         ...
 
     def storeClient(self, client):
-        with json
+        with open("clients.json", "w", encoding="utf-8") as f:
+            json.dump(client, f)
     
     def register(self):
 
@@ -46,7 +47,7 @@ class CentralApp:
 
 
 def main():
-
+    central = CentralApp()
     while True:
         print(">> [Operation List]")
         print(">> 1 - Register")
@@ -54,7 +55,7 @@ def main():
         op = input(">> (1 or 2): ")
 
         if op == "1":
-            register()
+            central.register()
         elif op == "2":
             ...
         else:
