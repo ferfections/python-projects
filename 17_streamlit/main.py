@@ -1,4 +1,4 @@
 import streamlit as st
 
 # st.balloons()
-st.badge(label="")
+st.badge(label="", url="")
