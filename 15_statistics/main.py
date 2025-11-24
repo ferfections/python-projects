@@ -6,5 +6,5 @@ import numpy as np
 
 x = st.NormalDist(2.5, 3)
 print(x.inv_cdf(1-0.05))
-print(x.)
+print(x.inv_cdf(1-0.01))
 
