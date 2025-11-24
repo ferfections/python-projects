@@ -6,5 +6,5 @@ df = pd.DataFrame(
         "Edad":[24, 23, 24]
     })
 
-
+df.to_csv("personas.csv")
 print(df)
